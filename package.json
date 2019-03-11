@@ -1,0 +1,22 @@
+{
+  "name": "notepad-node",
+  "version": "1.0.0",
+  "description": "notepad app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamshadmirza/Notepad-node.git"
+  },
+  "author": "Mohd Shad Mirza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamshadmirza/Notepad-node/issues"
+  },
+  "homepage": "https://github.com/iamshadmirza/Notepad-node#readme",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}
