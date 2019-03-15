@@ -15,11 +15,16 @@ if (argv._[0] === 'add') {
         console.log('Note title already taken');
     } else {
         console.log('Note created successfully');
-        console.log(`Title: ${note.title}`);
-        console.log(`Body: ${note.body}`);
+        notes.logNote(note);
     }
 } else if (argv._[0] === 'read') {
-    notes.getNote(argv.title);
+    var note = notes.getNote(argv.title);
+    if (_.isUndefined(note)) {
+        console.log('Note not found');
+    } else {
+        console.log('Note found is');
+        notes.logNote(note);
+    }
 } else if (argv._[0] === 'remove') {
     var noteRemoved = notes.removeNote(argv.title);
     var message = noteRemoved ? 'Note removed successfully' : 'Note not found';
