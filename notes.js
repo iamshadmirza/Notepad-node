@@ -25,7 +25,7 @@ var addNote = (title, body) => {
 };
 
 var getAll = () => {
-    console.log('getting all');
+    return fetchNotes();
 };
 
 var getNote = (title) => {

@@ -30,5 +30,9 @@ if (argv._[0] === 'add') {
     var message = noteRemoved ? 'Note removed successfully' : 'Note not found';
     console.log(message);
 } else if (argv._[0] === 'list') {
-    notes.getAll();
+    var allNotes = notes.getAll();
+    console.log(`Printing ${allNotes.length} note(s).`);
+    allNotes.forEach(element => {
+        notes.logNote(element);
+    });
 }
